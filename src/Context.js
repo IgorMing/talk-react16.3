@@ -7,7 +7,6 @@ export default class Parent extends Component {
 
   render() {
     return (
-
       <FirstChild msg={this.state.message} />
     );
   }
