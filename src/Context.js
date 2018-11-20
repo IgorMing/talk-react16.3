@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
 export default class Parent extends Component {
+  state = {
+    message: 'Hi people!'
+  }
+
   render() {
     return (
-      <FirstChild msg="Hi people!" />
+
+      <FirstChild msg={this.state.message} />
     );
   }
 }
